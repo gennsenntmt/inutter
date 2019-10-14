@@ -1,0 +1,130 @@
+body,html {
+  height: 100%;
+  // background-color: whitesmoke;
+}
+
+h1,h2,h3,h4,h5,h6,body {
+  line-height: 1.57;
+    letter-spacing: 0.15em;
+    font-size: 16px;
+    color: black;
+    font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: gray;
+    &:hover { 
+      opacity: 0.8;
+    }
+  }
+.blue-lighten-2 {
+  position: fixed;
+  top: 0px;
+  background-color: #64B5F6;
+  z-index: 1;
+}
+
+.contents {
+  height: 450px;
+  background-color:#ffffff;
+  text-align: center;
+  margin-bottom: 450px;
+}
+
+.brand-logo {
+  margin-left: 665px;
+}
+
+.btn-floating {
+  float: left;
+  margin: 30px 0 0 170px;
+  background-color: whitesmoke;
+  position: fixed;
+
+}
+
+
+.pagination {
+  background-color: #64B5F6;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 60px;
+}
+
+.content_post {
+  // overflow: auto;
+  // height: 100vh;
+}
+
+.more {
+  position: relative;
+  height: 150px;
+  width: 600px;
+  background-color: #64B5F6;
+  margin: 15px auto;
+}
+
+.cover {
+  height: 140px;
+  width: 590px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+}
+
+.nickname {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  font-family: serif;
+  font-size: 16px;
+}
+
+.text {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+  font-size: 20px;
+  width: 400px;
+  height: 100px;
+  // overflow: scroll;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+.edit {
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+  background-color: white;
+  border: solid 2px #99ccff;
+  border-radius: 3px;
+  background-color: #e1f6f6;
+  
+}
+
+a:focus {
+  color: white;
+}
+
+.delete {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  border: solid 2px #99ccff;
+  border-radius: 3px;
+  background-color: #e1f6f6;
+}
+
+
+
+
+
+
+

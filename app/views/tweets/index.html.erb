@@ -1,0 +1,24 @@
+<h2 class="search">検索</h2>
+
+<div class='search-tag'>
+  <%= form_tag(root_path, method: :get) do %>
+    <%= text_field_tag :search %>
+    <%= submit_tag 'search', name: nil%>
+  <% end %>
+</div>
+
+
+
+<a class="btn-floating btn-middle waves-effect  pink" href="/tweets/new"><i class="material-icons">+</i></a>
+
+
+
+<div class="contents" >
+  <% @tweets.each do |tweet| %>
+    <%= render partial: "tweet", locals: { tweet: tweet }%>
+  <% end %>
+  <%= paginate(@tweets)%>
+</div>
+
+ 
+

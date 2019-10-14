@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inutter</title>
+  <style type="text/css" href="./style.css"></style>
+
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+<body>
+
+ <nav>
+ <nav class="blue-lighten-2">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo">Blog</a>
+    
+    <% if user_signed_in? %>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+      <li><a href="tweets/new">投稿する</a></li>
+    </ul>
+    <% else %>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to "ログイン", new_user_session_path, method: :get %></li>
+      <li><%= link_to "新規登録", new_user_registration_path, method: :get %></li>
+    </ul>
+    <% end %>
+  </div>
+</nav>
+
+<script type="text/javascript" src="./app.js"></script>
+  </nav>
+
+  
+  <%= yield %>
+
+
+</body>
+</html>

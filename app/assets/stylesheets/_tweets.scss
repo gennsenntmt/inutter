@@ -1,0 +1,59 @@
+.contents-post {
+ margin: 100px 0 0 500px; 
+ height: 400px;
+}
+
+.btn {
+  height: 50px;
+  background: #64B5F6;
+  margin-top: 20px;
+}
+
+.contents-create {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contents-edit {
+  margin: 75px auto; 
+  height: 400px;
+  width: 500px;
+}
+
+.text-edit {
+  height: 200px;
+  width: 500px;
+}
+
+.edit-btn {
+  border-radius: 3px;
+  color: gray;
+  background-color: #64B5F6;
+  width: 100px;
+  height: 100px;
+}
+
+.contents-update {
+  margin: 50px 0 0 600px;
+}
+
+.edit-text {
+  font-size: 1.2rem;
+}
+
+.search {
+  color: rgb(34, 179, 94);
+  float: left;
+  font-weight: bold;
+  position: fixed;
+  margin: 30px;
+}
+
+.search-tag {
+  float: left;
+  display: flex;
+  position: fixed;
+  margin: 60px 0 0 30px;
+  width: 120px;
+  height: 100px;
+}

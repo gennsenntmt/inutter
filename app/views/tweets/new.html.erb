@@ -1,0 +1,13 @@
+<div class="contents-post">
+  <h2>今の気持ち!</h2>
+  <%= form_for @tweet, method: :post do |f| %>
+    <div>
+      <%= f.text_area :text, placeholder: '本文 ５０字まで', style: 'width: 50%;height: 200px;', maxlength: "50" %>
+    </div>
+    <div>
+      <%= button_tag type: "submit", class: "btn btn--block" do %>
+      投稿する<i class="icon-arrow-right"></i>
+      <% end %>
+    </div>
+  <% end %>
+</div>

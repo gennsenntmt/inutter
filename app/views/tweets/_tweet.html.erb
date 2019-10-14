@@ -1,0 +1,17 @@
+   <div class="content_post">  
+        <div class="more">
+          <div class="cover">
+            <ul class="more_list">
+              <li><p class="nickname"><%= tweet.user.nickname %></p></li>
+              <li><p class="text"><%= tweet.text %></p></li>
+              <li class="edit">
+                <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+              </li>
+            <li class="delete">
+              <%= link_to '削除', "/tweets/#{tweet.id}" , method: :delete %>
+            </li>
+          </ul>
+        </div>
+       </div>
+      
+    

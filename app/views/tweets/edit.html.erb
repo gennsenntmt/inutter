@@ -1,0 +1,11 @@
+  <div class="contents-edit">
+    <%= form_tag("/tweets/#{@tweet.id}", method: :patch ) do %>
+      <h2>
+        編集する
+      </h2>
+      <textarea class="text-edit" name="text" placeholder="text"><%= @tweet.text %></textarea>
+      <input class="edit-btn" type="submit" value="送 信"　>
+    <% end %>
+  </div>
+
+  
